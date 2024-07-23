@@ -1,0 +1,13 @@
+[package]
+name = "lambda_template"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lukasz Orlowski <lukasz@orlowski.io>"]
+
+[dependencies]
+lambda_runtime = "0.12.0"
+serde = "1.0.204"
+tokio = { version = "1", features = ["macros"] }
+
+[dev-dependencies]
+tokio-test = "0.4.4"

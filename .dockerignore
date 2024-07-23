@@ -1,0 +1,13 @@
+**/*.log
+**/*.tmp
+**/*~
+**/.env
+**/.vscode
+target/
+Dockerfile*
+README.md
+.devcontainer
+.dockerignore
+.git
+.gitignore
+.github
