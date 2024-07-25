@@ -34,7 +34,8 @@ RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y && \
     ${CARGO_BIN}/rustup component add rust-src --toolchain ${RUST_TOOLCHAIN} && \
     ${CARGO_BIN}/rustup component add rust-analyzer --toolchain ${RUST_TOOLCHAIN} && \
     ${CARGO_BIN}/rustup component add llvm-tools-preview --toolchain ${RUST_TOOLCHAIN} && \
-    ${CARGO_BIN}/cargo install cargo-llvm-cov
+    ${CARGO_BIN}/cargo install cargo-llvm-cov && \
+    ${CARGO_BIN}/cargo install cargo-lambda
 # Move the Rust installation to the non-root user's home directory
 # Note to myself: There has to be a better way to do this
 RUN mv ~/.cargo /home/${USERNAME} && \
